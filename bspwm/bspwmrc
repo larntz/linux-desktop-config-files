@@ -1,0 +1,31 @@
+#! /bin/sh
+
+# start lemonbar
+#/bin/bash ~/.bin/lbar.sh | lemonbar -f -xos4-terminus-*-*-*-*-12-*-*-*-*-*-*-* -F '#eff0f1' -p &
+#/bin/bash ~/.bin/lbar.sh | lemonbar -f -misc-fixed-*-*-*-*-14-*-*-*-*-*-*-* -p &
+#/bin/bash ~/.bin/lbar.sh | lemonbar -f -*-dina-*-*-*-*-12-*-*-*-*-*-*-*  -p & 
+
+
+# start sxhkd
+feh -z --bg-fill /home/larntz/Documents/Wallpaper/neon-trees.jpg 
+sxhkd &
+compton &
+dunst &
+redshift &
+
+bspc monitor VGA-1 -d I II III IV V VI VII VIII IX X XI XII XIII XIV XV
+#bspc monitor HDMI-0 -d I II III IV V VI VII VIII 
+#bspc monitor VGA-0 -d IX X XI XII XIII XIV XV
+
+bspc config border_width         3
+bspc config window_gap           5
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config click_to_focus       true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Evolution-alarm-notify state=floating 
+bspc rule -a org.remmina.Remmina state=floating

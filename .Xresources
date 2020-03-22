@@ -1,0 +1,102 @@
+!##############
+!# Xft settings
+!##############
+
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!#################################
+!# Color settings (Solarized dark)
+!#################################
+
+*background: #002b36
+*foreground: #657b83
+*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!################
+!# URXVT settings
+!################
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.loginShell:           true
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+!# Font-Size Extension
+!# https://github.com/majutsushi/urxvt-font-size
+URxvt.perl-ext-common: ...,font-size
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+!# transparency - true or false (default)
+URxvt*transparent: true
+
+!# shading - 0 to 99 darkens, 101 to 200 lightens.
+!#   Dont use with tintColor; just use a darker or lighter color instead.
+URxvt*shading: 15
+
+!# tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+!#   some nice listings are at:
+!#     http://www.nisrv.com/drupal/?q=node/11
+!#     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+!URxvt*tintColor: olive
+
+
+URxvt*saveLines: 12000
+
+URxvt*foreground: #eff0f1
+URxvt*background: #111111
+
+!## Monaco Linux font
+!#URxvt*font: xft:Monaco:pixelsize=15
+!#URxvt*boldFont: xft:Monaco:bold:pixelsize=15
+
+URxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+URxvt*BoldFont: -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
+!URxvt*font: xft:Dina:pixelsize=16
+!URxvt*boldFont: xft:Dina:pixelsize=16
+
+URxvt*letterSpace: 0
+
+!# scrollbar - true (default) or false
+URxvt*scrollBar: false
+
+!# scrollbar position - left=false (default) or right=true
+URxvt*scrollBar_right: false
+
+!# scrollbar style - rxvt (default), plain, next, or xterm
+URxvt*scrollstyle: plain
+
+
+!! rofi
+rofi.location:          0
+rofi.color-enabled:     true
+!                       'background', 'border'
+rofi.color-window:      argb:dc111111, argb:dc111111
+! State:                'bg',          'fg',   'bgalt',       'hlbg',        'hlfg'
+rofi.color-normal:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
+rofi.color-urgent:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
+rofi.color-active:      argb:00333333, #ffffff, argb:00333333, argb:00333333, argb:ffefa211
+rofi.separator-style:   dash
+rofi.fullscreen:        false
+rofi.padding:           70
+rofi.hide-scrollbar:    true
+rofi.line-margin:       5
+rofi.fake-transparency: false
+rofi.yoffset:           0
+rofi.xoffset:           0
+rofi.width:             1366
+rofi.opacity:           90
+rofi.font: Terminus 10
